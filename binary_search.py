@@ -4,7 +4,6 @@ def binary_search(array, number):
     counter = 0
     while low <= high:
         counter = counter + 1
-        print(counter)
         mid = int((low + high)/2)
         guess = array[mid]
         if guess == number:
@@ -13,4 +12,6 @@ def binary_search(array, number):
             high = mid-1
         else:
             low = mid+1
+
+    print('# of Steps: ' + str(counter))
     return None
